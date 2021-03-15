@@ -11,7 +11,7 @@ class BetterCalculator:
     def Pow(x, y):
         for i in range(y-1):
             x = x * x
-        return x  # 庭維
+        return x  # 庭維上傳囉~~~
 
     @staticmethod
     def Gcd(x, y):

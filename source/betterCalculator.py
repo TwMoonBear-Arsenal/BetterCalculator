@@ -7,17 +7,19 @@ class BetterCalculator:
 
     @staticmethod
     def Conj(x, y):
-        return x+y  # 宇森
+        return str(x)+str(y)  # 宇森
 
     @staticmethod
     def Pow(x, y):
-        for i in range(y-1):
-            x = x * x
-        return x  # 庭維上傳囉~~~衝翁出衝衝衝
+        a = 1
+        for i in range(y):
+            a = a * x
+        return a  # 庭維上傳囉~~~衝翁出衝衝衝
 
     @staticmethod
     def Gcd(x, y):
-        x, y = y % x, x
+        while y != 0:
+            x, y = y % x, x
         return y  # 咚咚組123
 
     @staticmethod

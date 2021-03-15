@@ -13,22 +13,18 @@ class BetterCalculator:
     def Pow(x, y):
         for i in range(y-1):
             x = x * x
-<<<<<<< HEAD
-        return x  # 庭維上傳囉~~~ 哈哈是我啦
-=======
         return x  # 庭維上傳囉~~~衝翁出衝衝衝
->>>>>>> 8d71e3d3f715997974a9e23621820ea9d4bae17f
 
     @staticmethod
     def Gcd(x, y):
-            x, y = y % x, x
+        x, y = y % x, x
         return y  # 咚咚組123
 
     @staticmethod
     def Mod(x, y):
-        t=int(x/y)
-        x=x-(y*t)
-        return x # 學姊組
+        t = int(x/y)
+        x = x-(y*t)
+        return x  # 學姊組
 
 
 def main():
@@ -46,13 +42,13 @@ def main():
     args = parser.parse_args()
 
     if(args.operator == "c"):
-        ans = Calculator.Conj(args.x, args.y)
+        ans = BetterCalculator.Conj(args.x, args.y)
     elif(args.operator == "p"):
-        ans = Calculator.Pow(args.x, args.y)
+        ans = BetterCalculator.Pow(args.x, args.y)
     elif(args.operator == "g"):
-        ans = Calculator.Gcd(args.x, args.y)
+        ans = BetterCalculator.Gcd(args.x, args.y)
     elif(args.operator == "m"):
-        ans = Calculator.Mod(args.x, args.y)
+        ans = BetterCalculator.Mod(args.x, args.y)
     else:
         ans = "輸入錯誤"
 

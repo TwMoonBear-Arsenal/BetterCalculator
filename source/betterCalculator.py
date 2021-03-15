@@ -1,6 +1,6 @@
 import argparse  # from std
 
-
+#我好帥
 class BetterCalculator:
 
     @staticmethod

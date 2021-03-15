@@ -1,6 +1,6 @@
 import argparse  # from std
 
-
+#我好帥
 class BetterCalculator:
 
     @staticmethod
@@ -16,7 +16,7 @@ class BetterCalculator:
     @staticmethod
     def Gcd(x, y):
             x, y = y % x, x
-        return y  # 咚咚組
+        return y  # 咚咚組123
 
     @staticmethod
     def Mod(x, y):

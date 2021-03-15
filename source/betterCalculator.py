@@ -1,23 +1,27 @@
 import argparse  # from std
 
-
+#我好帥
 class BetterCalculator:
 
     @staticmethod
     def Conj(x, y):
-        return  x+y# 宇森
+        return x+y  # 宇森
 
     @staticmethod
     def Pow(x, y):
         for i in range(y-1):
             x = x * x
-        return x  # 庭維
+<<<<<<< HEAD
+        return x  # 庭維上傳囉~~~ 哈哈是我啦
+=======
+        return x  # 庭維上傳囉~~~衝翁出衝衝衝
+>>>>>>> 8d71e3d3f715997974a9e23621820ea9d4bae17f
 
     @staticmethod
     def Gcd(x, y):
         while a != 0:
             x, y = y % x, x
-        return y  # 咚咚組
+        return y  # 咚咚組123
 
     @staticmethod
     def Mod(x, y):
@@ -31,7 +35,7 @@ def main():
     # 準備參數解析
     example_text = "example usage: py.exe .\BetterCalculator.py 5 c 3"
     parser = argparse.ArgumentParser(
-        description="簡單數學運算功能", epilog=example_text)
+        description="好一點數學運算功能", epilog=example_text)
     parser.add_argument("x", help="第1個數字",
                         type=int)
     parser.add_argument("operator", help="運算符號:連接(c),次方(p),公約數(g),餘數(m)}",

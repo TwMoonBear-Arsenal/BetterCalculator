@@ -43,13 +43,13 @@ def main():
     args = parser.parse_args()
 
     if(args.operator == "c"):
-        ans = Calculator.Conj(args.x, args.y)
+        ans = BetterCalculator.Conj(args.x, args.y)
     elif(args.operator == "p"):
-        ans = Calculator.Pow(args.x, args.y)
+        ans = BetterCalculator.Pow(args.x, args.y)
     elif(args.operator == "g"):
-        ans = Calculator.Gcd(args.x, args.y)
+        ans = BetterCalculator.Gcd(args.x, args.y)
     elif(args.operator == "m"):
-        ans = Calculator.Mod(args.x, args.y)
+        ans = BetterCalculator.Mod(args.x, args.y)
     else:
         ans = "輸入錯誤"
 

@@ -7,7 +7,7 @@ class BetterCalculator:
 
     @staticmethod
     def Conj(x, y):
-        return x+y  # 宇森
+        return str(x)+str(y)  # 宇森
 
     @staticmethod
     def Pow(x, y):

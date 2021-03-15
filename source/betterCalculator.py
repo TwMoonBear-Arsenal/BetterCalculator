@@ -9,7 +9,9 @@ class BetterCalculator:
 
     @staticmethod
     def Pow(x, y):
-        return  # 庭維
+        for i in y-1:
+            x = x * x
+        return x  # 庭維
 
     @staticmethod
     def Gcd(x, y):

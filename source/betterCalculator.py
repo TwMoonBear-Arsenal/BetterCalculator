@@ -9,7 +9,7 @@ class BetterCalculator:
 
     @staticmethod
     def Pow(x, y):
-        for i in y-1:
+        for i in range(y-1):
             x = x * x
         return x  # 庭維
 

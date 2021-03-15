@@ -19,7 +19,9 @@ class BetterCalculator:
 
     @staticmethod
     def Mod(x, y):
-        return  # 學姊組
+        t=int(x/y)
+        x=x-(y*t)
+        return x # 學姊組
 
 
 def main():

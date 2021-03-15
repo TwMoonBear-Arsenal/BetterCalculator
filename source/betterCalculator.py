@@ -1,6 +1,8 @@
 import argparse  # from std
 
-#我好帥
+# 我好帥
+
+
 class BetterCalculator:
 
     @staticmethod
@@ -11,11 +13,7 @@ class BetterCalculator:
     def Pow(x, y):
         for i in range(y-1):
             x = x * x
-<<<<<<< HEAD
-        return x  # 庭維上傳囉~~~ 哈哈是我啦
-=======
         return x  # 庭維上傳囉~~~衝翁出衝衝衝
->>>>>>> 8d71e3d3f715997974a9e23621820ea9d4bae17f
 
     @staticmethod
     def Gcd(x, y):

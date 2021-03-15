@@ -17,7 +17,7 @@ class BetterCalculator:
 
     @staticmethod
     def Gcd(x, y):
-        while a != 0:
+        while y != 0:
             x, y = y % x, x
         return y  # 咚咚組123
 

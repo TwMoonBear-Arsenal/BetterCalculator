@@ -15,11 +15,14 @@ class BetterCalculator:
 
     @staticmethod
     def Gcd(x, y):
-        return  # 咚咚組
+            x, y = y % x, x
+        return y  # 咚咚組  # 咚咚組
 
     @staticmethod
     def Mod(x, y):
-        return  # 學姊組
+        t=int(x/y)
+        x=x-(y*t)
+        return x # 學姊組
 
 
 def main():

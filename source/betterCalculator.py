@@ -11,12 +11,12 @@ class BetterCalculator:
     def Pow(x, y):
         for i in range(y-1):
             x = x * x
-        return x  # 庭維
+        return x  # 庭維上傳囉~~~
 
     @staticmethod
     def Gcd(x, y):
             x, y = y % x, x
-        return y  # 咚咚組  # 咚咚組
+        return y  # 咚咚組
 
     @staticmethod
     def Mod(x, y):

@@ -5,7 +5,7 @@ class BetterCalculator:
 
     @staticmethod
     def Conj(x, y):
-        return  # 宇森
+        return  x+y# 宇森
 
     @staticmethod
     def Pow(x, y):

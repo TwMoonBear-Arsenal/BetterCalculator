@@ -5,7 +5,7 @@ class BetterCalculator:
 
     @staticmethod
     def Conj(x, y):
-        return  x+y# 宇森
+        return x+y  # 宇森
 
     @staticmethod
     def Pow(x, y):
@@ -30,7 +30,7 @@ def main():
     # 準備參數解析
     example_text = "example usage: py.exe .\BetterCalculator.py 5 c 3"
     parser = argparse.ArgumentParser(
-        description="簡單數學運算功能", epilog=example_text)
+        description="好一點數學運算功能", epilog=example_text)
     parser.add_argument("x", help="第1個數字",
                         type=int)
     parser.add_argument("operator", help="運算符號:連接(c),次方(p),公約數(g),餘數(m)}",

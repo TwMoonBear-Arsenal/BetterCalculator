@@ -22,7 +22,7 @@ class BetterCalculator:
     def Gcd(x, y):
         while y != 0:
             x, y = y % x, x
-        return x  # 咚咚組123
+        return y  # 咚咚組123
 
     @staticmethod
     def Mod(x, y):

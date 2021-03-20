@@ -19,12 +19,6 @@ class BetterCalculator:
         return a  # 庭維上傳囉~~~衝翁出衝衝衝
 
     @staticmethod
-    def Gcd(x, y):
-        while y != 0:
-            x, y = y % x, x
-        return y  # 咚咚組123
-
-    @staticmethod
     def Mod(x, y):
         t = int(x/y)
         x = x-(y*t)
@@ -54,7 +48,7 @@ def main():
         description="好一點數學運算功能", epilog=example_text)
     parser.add_argument("x", help="第1個數字",
                         type=int)
-    parser.add_argument("operator", help="運算符號:加法(+), 減法(+), 乘法(+), 除法(+), 連接(c),次方(p),公約數(g),餘數(m)}",
+    parser.add_argument("operator", help="運算符號:加法(+), 減法(+), 乘法(+), 除法(+), 連接(c),次方(p), 餘數(m)}",
                         type=str)
     parser.add_argument("y", help="第2個數字",
                         type=int)
@@ -72,8 +66,6 @@ def main():
         ans = BetterCalculator.Conj(args.x, args.y)
     elif(args.operator == "p"):
         ans = BetterCalculator.Pow(args.x, args.y)
-    elif(args.operator == "g"):
-        ans = BetterCalculator.Gcd(args.x, args.y)
     elif(args.operator == "m"):
         ans = BetterCalculator.Mod(args.x, args.y)
     else:

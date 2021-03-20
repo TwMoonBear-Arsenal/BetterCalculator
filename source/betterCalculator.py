@@ -30,6 +30,21 @@ class BetterCalculator:
         x = x-(y*t)
         return x  # 學姊組
 
+    @staticmethod
+    def Add(x, y):
+        return x+y
+
+    @staticmethod
+    def Minus(x, y):
+        return x-y
+
+    @staticmethod
+    def Multiple(x, y):
+        return x*y
+    
+    @staticmethod
+    def Divide(x, y):
+        return x*y
 
 def main():
 
@@ -39,13 +54,21 @@ def main():
         description="好一點數學運算功能", epilog=example_text)
     parser.add_argument("x", help="第1個數字",
                         type=int)
-    parser.add_argument("operator", help="運算符號:連接(c),次方(p),公約數(g),餘數(m)}",
+    parser.add_argument("operator", help="運算符號:加法(+), 減法(+), 乘法(+), 除法(+), 連接(c),次方(p),公約數(g),餘數(m)}",
                         type=str)
     parser.add_argument("y", help="第2個數字",
                         type=int)
     args = parser.parse_args()
 
-    if(args.operator == "c"):
+    if(args.operator == "+"):
+        ans = Calculator.Add(args.x, args.y)
+    elif(args.operator == "*"):
+        ans = Calculator.Multiple(args.x, args.y)
+    elif(args.operator == "-"):
+        ans = Calculator.Minus(args.x, args.y)
+    elif(args.operator == "/"):
+        ans = Calculator.Divide(args.x, args.y)
+    elif(args.operator == "c"):
         ans = BetterCalculator.Conj(args.x, args.y)
     elif(args.operator == "p"):
         ans = BetterCalculator.Pow(args.x, args.y)

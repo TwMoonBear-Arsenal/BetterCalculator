@@ -61,13 +61,13 @@ def main():
     args = parser.parse_args()
 
     if(args.operator == "+"):
-        ans = Calculator.Add(args.x, args.y)
+        ans = BetterCalculator.Add(args.x, args.y)
     elif(args.operator == "*"):
-        ans = Calculator.Multiple(args.x, args.y)
+        ans = BetterCalculator.Multiple(args.x, args.y)
     elif(args.operator == "-"):
-        ans = Calculator.Minus(args.x, args.y)
+        ans = BetterCalculator.Minus(args.x, args.y)
     elif(args.operator == "/"):
-        ans = Calculator.Divide(args.x, args.y)
+        ans = BetterCalculator.Divide(args.x, args.y)
     elif(args.operator == "c"):
         ans = BetterCalculator.Conj(args.x, args.y)
     elif(args.operator == "p"):

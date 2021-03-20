@@ -38,7 +38,7 @@ class BetterCalculator:
     
     @staticmethod
     def Divide(x, y):
-        return x*y
+        return x/y
 
 def main():
 
